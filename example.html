@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Bubbles Example</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="jquery.bubbles.js"></script>
+    <style type="text/css">
+        
+        /* required */
+        .jquery-bubbles { position: relative; }
+        .jquery-bubble img { width: 100%; }
+        
+        /* demo purposes */
+        .bubbles { width: 300px; height: 300px; margin: 0 10px; float: left; }
+        .bubbles .label { text-transform: uppercase; text-align: center; font-size: 20px; padding: 30px 10px; font-family: Arial; }
+        .bubbles.beer { background: #D1A319; }
+        .bubbles.beer .label { color: #fff; }
+        .bubbles.water { background: #50A0F0; }
+        .bubbles.water .label { color: #0050A0; }
+        .bubbles.slime { background: #008D20; }
+        .bubbles.slime .label { color: #00f000; }
+        
+    </style>
+</head>
+
+<body>
+
+<h1>jQuery Bubbles!</h1>
+
+<div class="bubbles beer"><div class="label">Beer</div></div>
+
+<div class="bubbles water"><div class="label">Water</div></div>
+
+<div class="bubbles slime"><div class="label">Slime</div></div>
+
+
+<script type="text/javascript">
+    $('.bubbles.beer').bubbles({maxSize: 20});
+    $('.bubbles.water').bubbles({frequency: 150});
+    $('.bubbles.slime').bubbles({maxSize: 30, density: 1000});
+</script>
+
+</body>
+</html>
