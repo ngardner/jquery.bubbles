@@ -2,6 +2,8 @@
 
 This plugin makes any HTML element bubble or fizz like a carbonated drink.
 
+[Checkout a quick demo](http://nathangardner.me/jQueryBubbles.example.html)
+
 ## Usage
 
 The plugin requires [jQuery](http://jquery.com/). Integration is pretty simple:
